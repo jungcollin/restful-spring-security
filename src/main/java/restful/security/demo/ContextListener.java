@@ -1,4 +1,4 @@
-package com.github.virgo47.respsec;
+package restful.security.demo;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

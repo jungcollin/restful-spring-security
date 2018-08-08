@@ -1,6 +1,6 @@
-package com.github.virgo47.respsec.main.secimpl;
+package restful.security.demo.main.secimpl;
 
-import com.github.virgo47.respsec.main.domain.User;
+import restful.security.demo.main.domain.User;
 
 import java.util.ArrayList;
 import java.util.Collection;

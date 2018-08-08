@@ -1,4 +1,4 @@
-package com.github.virgo47.respsec.main.restsec;
+package restful.security.demo.main.restsec;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

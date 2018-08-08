@@ -1,8 +1,8 @@
-package com.github.virgo47.respsec.main.secimpl;
+package restful.security.demo.main.secimpl;
 
-import com.github.virgo47.respsec.main.restsec.AuthenticationService;
-import com.github.virgo47.respsec.main.restsec.TokenInfo;
-import com.github.virgo47.respsec.main.restsec.TokenManager;
+import restful.security.demo.main.restsec.AuthenticationService;
+import restful.security.demo.main.restsec.TokenInfo;
+import restful.security.demo.main.restsec.TokenManager;
 
 import javax.annotation.PostConstruct;
 

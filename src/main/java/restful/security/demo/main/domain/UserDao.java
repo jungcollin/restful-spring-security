@@ -1,4 +1,4 @@
-package com.github.virgo47.respsec.main.domain;
+package restful.security.demo.main.domain;
 
 import org.springframework.stereotype.Component;
 

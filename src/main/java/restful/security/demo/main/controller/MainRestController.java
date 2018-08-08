@@ -1,4 +1,4 @@
-package com.github.virgo47.respsec.mvc;
+package restful.security.demo.main.controller;
 
 import java.util.Collection;
 import java.util.Map;
@@ -6,9 +6,9 @@ import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.annotation.security.RolesAllowed;
 
-import com.github.virgo47.respsec.main.restsec.AuthenticationService;
-import com.github.virgo47.respsec.main.restsec.TokenInfo;
-import com.github.virgo47.respsec.main.restsec.TokenManager;
+import restful.security.demo.main.restsec.AuthenticationService;
+import restful.security.demo.main.restsec.TokenInfo;
+import restful.security.demo.main.restsec.TokenManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.security.access.annotation.Secured;

@@ -1,4 +1,4 @@
-package com.github.virgo47.respsec.main.restsec;
+package restful.security.demo.main.restsec;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.context.SecurityContextHolder;

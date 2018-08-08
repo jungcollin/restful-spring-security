@@ -1,18 +1,11 @@
-package com.github.virgo47.respsec.main.secimpl;
+package restful.security.demo.main.secimpl;
 
-import com.github.virgo47.respsec.main.restsec.TokenInfo;
-import com.github.virgo47.respsec.main.restsec.TokenManager;
+import restful.security.demo.main.restsec.TokenInfo;
+import restful.security.demo.main.restsec.TokenManager;
 
-import java.nio.charset.StandardCharsets;
-import java.security.SecureRandom;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.codec.Base64;
 
 /**
  * Implements simple token manager, that keeps a single token for each user. If user logs in again,
@@ -49,9 +42,10 @@ public class TokenManagerSingle implements TokenManager {
 	}
 
 	private String generateToken() {
-		byte[] tokenBytes = new byte[32];
-		new SecureRandom().nextBytes(tokenBytes);
-		return new String(Base64.encode(tokenBytes), StandardCharsets.UTF_8);
+//		byte[] tokenBytes = new byte[32];
+//		new SecureRandom().nextBytes(tokenBytes);
+//		return new String(Base64.encode(tokenBytes), StandardCharsets.UTF_8);
+		return "Bearer" + UUID.randomUUID().toString();
 	}
 
 	@Override

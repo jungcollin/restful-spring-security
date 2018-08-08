@@ -13,7 +13,7 @@
 	</context-param>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>com.github.virgo47.respsec.Main</param-value>
+		<param-value>restful.security.demo.Main</param-value>
 	</context-param>
 
 	<!-- This loads the root application context (i.e. service layer and under) -->
@@ -31,24 +31,4 @@
 		<dispatcher>REQUEST</dispatcher>
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
-
-	<!-- Spring MVC servlet with customized configuration location -->
-	<servlet>
-		<servlet-name>mvc</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/spring-mvc.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>mvc</servlet-name>
-		<!--
-		This cannot be /*, it must be bound to "default" servlet (/).
-		Otherwise JSPs are not displayed correctly, e.g. http://localhost:8080/respsec/
-		-->
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
 </web-app>

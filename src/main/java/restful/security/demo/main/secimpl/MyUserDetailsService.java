@@ -1,8 +1,8 @@
-package com.github.virgo47.respsec.main.secimpl;
+package restful.security.demo.main.secimpl;
 
-import com.github.virgo47.respsec.main.domain.User;
-import com.github.virgo47.respsec.main.domain.UserDao;
-import com.github.virgo47.respsec.main.restsec.AuthenticationService;
+import restful.security.demo.main.domain.User;
+import restful.security.demo.main.domain.UserDao;
+import restful.security.demo.main.restsec.AuthenticationService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
